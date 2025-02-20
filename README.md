@@ -41,8 +41,8 @@ Este projeto tem como objetivo aplicar o conhecimento difundido nas aulas teóri
 - [ChatGPT](https://chat.openai.com/)
 - [DeepSeek](https://chat.deepseek.com/)
 - [Google Colab](https://colab.google/)
-- [Google Imagens](https://images.google.com/?hl=pt-br)
-- [LabelMe](http://labelme.csail.mit.edu/Release3.0/)
+- [Google Cloud](https://cloud.google.com/sdk/docs/install?hl=pt-br)
+- [VSCode](https://vscode.dev/)
 
 
 ## ✨ Como foi feito ?
@@ -50,56 +50,65 @@ Este projeto tem como objetivo aplicar o conhecimento difundido nas aulas teóri
 - O Google Colab foi utilizado para executar os blocos de códigos
 - O chatgpt foi utilizado para gerar insights e aprofundamento do conhecimento
 - O DeepSeek foi utilizado para a depuração e refatoração do código
-- O Google Imagens foi utilizado para baixar imagens para o projeto
-- O LabelMe teve como propósito treinamento na aplicação do rótulo nas imagens
+- O Google Cloud foi utilizado para criar a API do Google Speech-to-Text
+- O VSCode para programar e emular o código em Python
 
 ## 🛠️ Instruções de execução
 
-As instruções para a realização deste projeto foram difundidas no módulo de Frameworks de Deep Learning do referido Bootcamp da DIO, onde além da explanação teórica foi disponibilizado orientações para a execução do projeto nos seguintes sítios:
-- Detecção Facial
-[(https://colab.research.google.com/github/ultralytics/yolov3/blob/master/tutorial.ipynb)](https://colab.research.google.com/drive/1QnC7lV7oVFk5OZCm75fqbLAfD9qBy9bw?usp=sharing )
-- Detecção e classificação de objetos<br>
-[(http://labelme.csail.mit.edu/Release3.0/)](https://colab.research.google.com/drive/1xdjyBiY75MAVRSjgmiqI7pbRLn58VrbE?usp=sharing )
+As instruções para a realização deste projeto foram difundidas no módulo de Visão Computacional com Machine Learning do referido Bootcamp da DIO, onde além da explanação teórica foi disponibilizado orientações para a execução do projeto no seguinte sítios:
+- Text to speech:<br>
+(https://github.com/diegobrunoDIO/Text-to-Speech-DIO)
+- Speech to text:<br>
+(https://github.com/diegobrunoDIO/Speech-to-text-ML-DIO)
 
-## Descrição
 
-O reconhecimento facial é uma tecnologia avançada baseada em visão computacional e inteligência artificial que tem se tornado essencial em diversos setores da sociedade na atualidade.
+## Sistema de Assistência Virtual com Uso de PLN
 
-### Importância e Aplicabilidade
+### Descrição
+<p align="justify">
+O sistema de assistência virtual desenvolvido utiliza técnicas de <b>Processamento de Linguagem Natural (PLN)</b> para interpretar comandos de voz e realizar tarefas específicas, como abrir sites, pesquisar na Wikipedia e interagir com o usuário. O PLN permite que o assistente entenda e processe a linguagem humana de forma eficiente, transformando comandos de voz em ações práticas. Essa tecnologia é fundamental para criar interfaces intuitivas e acessíveis, aproximando usuários e máquinas de forma natural.</p>
 
-- **Segurança e Vigilância:** Utilizado em aeroportos, prédios governamentais e empresas para controle de acesso e monitoramento.
-- **Autenticação e Privacidade:** Aplicado em dispositivos móveis e sistemas bancários para desbloqueio de telas e pagamentos seguros.
-- **Saúde e Diagnóstico:** Usado para identificar sintomas de doenças raras e monitorar expressões faciais em tratamentos médicos.
-- **Marketing e Experiência do Usuário:** Empresas utilizam a tecnologia para personalizar anúncios e analisar reações dos consumidores.
-- **Setor Público e Investigações:** Auxilia na identificação de criminosos e na busca por pessoas desaparecidas.
+### Aplicação
 
-### Passos para Desenvolver um Sistema de Detecção Facial
+A utilização de assistentes virtuais com PLN no contexto empresarial traz diversos benefícios:
 
-**1. Escolher uma Biblioteca ou Framework**<br>
-- OpenCV, Dlib, TensorFlow ou Mediapipe.<br>
-    
-**2. Carregar a Imagem ou Vídeo**<br>
-- Utilizar OpenCV (cv2.imread()) para carregar imagens.<br>
-    
-**3. Pré-processamento da Imagem**<br>
-- Converter para tons de cinza para otimizar a detecção.<br>
-    
-**4. Usar um Classificador Pré-Treinado**<br>
-- Modelos como Haarcascade ou DNN para detectar rostos.<br>
-    
-**5. Desenhar as Caixas Delimitadoras**<br>
-- Criar retângulos ao redor dos rostos detectados (cv2.rectangle()).<br>
-    
-**6. Treinar um Modelo para Classificação Facial (Opcional)**<br>
-- Utilizar redes neurais para classificar os rostos detectados.<br>
+**Automatização de tarefas repetitivas:** Reduz a carga de trabalho manual, como abertura de sites, pesquisas e gerenciamento de informações.
+**Melhoria na produtividade:** Funcionários podem focar em atividades estratégicas, enquanto o assistente cuida de tarefas operacionais.
+**Atendimento ao cliente:** Assistentes virtuais podem ser integrados a sistemas de suporte, oferecendo respostas rápidas e precisas.
+**Acessibilidade:** Facilita a interação com sistemas corporativos para pessoas com dificuldades motoras ou visuais.
 
-**7. Exibir e Testar o Sistema**<br>
-- Utilizar cv2.imshow() para visualizar a saída.<br>
+Essa tecnologia está revolucionando a forma como as empresas operam, tornando processos mais ágeis e eficientes.
 
+### Guia para Iniciantes
+
+Aqui estão os passos básicos para criar um Sistema de Assistência Virtual:
+
+### 1. Defina o escopo:
+
+- Decida quais funcionalidades o assistente terá (ex: abrir sites, pesquisar, executar comandos).
+
+### 2. Escolha as ferramentas:
+
+- Use bibliotecas como pyttsx3 para síntese de voz e SpeechRecognition para captura de áudio.
+- Integre APIs de PLN, como o Google Speech-to-Text, para reconhecimento de fala.
+
+### 3. Desenvolva as funcionalidades:
+
+- Crie funções para cada tarefa (ex: open_youtube(), search_wikipedia()).
+- Implemente a lógica para interpretar comandos de voz.
+
+### 4. Teste e ajuste:
+
+- Teste o sistema com diferentes comandos e ajuste a precisão do reconhecimento de voz.
+- Melhore a experiência do usuário com mensagens claras e respostas adequadas.
+
+### 5. Integre e implante:
+
+- Integre o assistente a sistemas corporativos ou disponibilize-o como uma aplicação standalone.
 
 ### Conclusão
-
-🚀 Para iniciantes em Machine Learning e Visão Computacional, é recomendável começar com conceitos básicos de Python e OpenCV, explorando bibliotecas como Mediapipe e TensorFlow. Praticar projetos simples, como detecção e reconhecimento de rostos, é um ótimo primeiro passo antes de avançar para modelos mais sofisticados, como redes neurais convolucionais (CNNs). Além disso, utilizar datasets públicos e experimentar modelos pré-treinados pode acelerar o aprendizado.
+<p align="justify">
+🚀 Os sistemas de assistentes virtuais estão transformando a dinâmica de trabalho no ambiente corporativo, automatizando tarefas, melhorando a eficiência e proporcionando uma interação mais natural entre humanos e máquinas. No futuro, esses sistemas terão um impacto ainda maior, com a integração de tecnologias avançadas de <b>Inteligência Artificial (IA) e Machine Learning (ML)</b>, permitindo assistentes mais inteligentes, personalizados e capazes de aprender com o comportamento do usuário. Essa evolução promete revolucionar não apenas o ambiente corporativo, mas também o cotidiano das pessoas, tornando a tecnologia cada vez mais acessível e útil.</p>
 
 ## 👨‍💻 Novato
 
