@@ -6,7 +6,7 @@
 
     - Instale as dependências necessárias executando:
 
-<img src= "  imagem1-1  " />
+<img src= "images/img_documents/imagem1-1.png" />
 
 ## 2. Configuração da API do Google Speech-to-Text:
 
@@ -21,7 +21,7 @@
 
     - Execute o script:
       
-<img src= " imagem1-2  " />
+<img src= "images/img_documents/imagem1-2.png" />
 
     - Fale comandos como "abrir YouTube", "abrir Google Maps" ou "pesquisar na Wikipedia".
 
